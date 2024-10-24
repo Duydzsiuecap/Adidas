@@ -1,0 +1,417 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#menu li {
+    margin: 0 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 15px 0;
+    display: block;
+}
+
+#menu a:hover {
+    color: #ff0000; /* màu khi di chuột */
+}
+
+#menu img {
+    height: 40px;
+}
+
+.timkiem {
+    display: flex;
+    align-items: center;
+}
+
+.timkiem input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.timkiem button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #ebeaea;
+    color: #0c0c0c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.timkiem button:hover {
+    background-color: #555;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    width: calc(25% - 20px); /* Adjust the width to fit 4 products per row */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.info {
+    padding: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.category, .details {
+    font-size: 14px;
+    color: #757575;
+    margin: 5px 0;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.video-overlay h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.video-overlay button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.filter-sort {
+    text-align: right;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.icons {
+            display: flex;
+            align-items: center;
+        }
+        .icons a {
+            margin-left: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .icons a img {
+            width: 40px; /* Điều chỉnh kích thước ảnh nếu cần */
+            height: auto;
+            margin-right: 5px;
+        }
+
+
+</style>
+<body>
+    <header>
+        <div id="menu">
+            <a href="index.html"><img src="../anh/logo.png" alt="Adidas Logo"></a>
+            <ul>
+                <li><a href="cartegorynam.html">Nam</a></li>
+                <li><a href="cartegorynu.html">Nữ</a></li>
+                <li><a href="#">Trẻ Em</a></li>
+                <li><a href="#">Thể Thao</a></li>
+                <li><a href="#">Các Nhãn Hiệu</a></li>
+                <li><a href="#">Sắp & Mới Ra Mắt</a></li>
+                <li><a href="#">Giảm Giá</a></li>
+            </ul>
+            <div class="timkiem">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit">Tìm</button>
+            </div>
+            <div class="icons">
+                <a href="#"><img src="../anh/icondangnhap.png" alt="Đăng nhập"></a>
+                <a href="#"><img src="../anh/icongiohang.png" alt="Giỏ hàng"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="../video/anhnu.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <h1></h1>
+            <button>Khám Phá Ngay</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="product">
+            <img src="path/to/ny90-white.jpg" alt="NY 90 Shoes White">
+            <div class="info">
+                <p class="price">2,200,000₫</p>
+                <p class="name">NY 90 Shoes</p>
+                <p class="category">Men Originals</p>
+                <p class="details">3 colours • new</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="path/to/vlcourt-black.jpg" alt="VL Court 2.0 Shoes Black">
+            <div class="info">
+                <p class="price">1,800,000₫</p>
+                <p class="name">VL Court 2.0 Shoes</p>
+                <p class="category">Men Sportswear</p>
+                <p class="details">2 colours • new</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="path/to/ny90-black.jpg" alt="NY 90 Shoes Black">
+            <div class="info">
+                <p class="price">2,200,000₫</p>
+                <p class="name">NY 90 Shoes</p>
+                <p class="category">Men Originals</p>
+                <p class="details">2 colours • new</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="path/to/ny90-navy.jpg" alt="NY 90 Shoes Navy Blue">
+            <div class="info">
+                <p class="price">2,200,000₫</p>
+                <p class="name">NY 90 Shoes</p>
+                <p class="category">Men Originals</p>
+                <p class="details">2 colours • new</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="path/to/samba.jpg" alt="Samba Shoes">
+            <div class="info">
+                <p class="price">2,700,000₫</p>
+                <p class="name">Samba Shoes</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="path/to/vlcourt-gray.jpg" alt="VL Court 2.0 Shoes Gray">
+            <div class="info">
+                <p class="price">1,800,000₫</p>
+                <p class="name">VL Court 2.0 Shoes</p>
+                <p class="category">Men Sportswear</p>
+                <p class="details">2 colours • new</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="path/to/continental80.jpg" alt="Continental 80 Shoes">
+            <div class="info">
+                <p class="price">2,600,000₫</p>
+                <p class="name">Continental 80 Shoes</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="path/to/ny90-white-blue.jpg" alt="NY 90 Shoes White with Blue and Yellow">
+            <div class="info">
+                <p class="price">2,300,000₫</p>
+                <p class="name">NY 90 Shoes</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-column">
+                <h3>SẢN PHẨM</h3>
+                <ul>
+                    <li>Giày</li>
+                    <li>Quần áo</li>
+                    <li>Phụ kiện</li>
+                    <li>Hàng mới về</li>
+                    <li>Release Dates</li>
+                    <li>Top Sellers</li>
+                    <li>Member exclusives</li>
+                    <li>Outlet</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>THỂ THAO</h3>
+                <ul>
+                    <li>Chạy</li>
+                    <li>Đánh gôn</li>
+                    <li>Gym & Training</li>
+                    <li>Bóng đá</li>
+                    <li>Bóng rổ</li>
+                    <li>Quần vợt</li>
+                    <li>Ngoài trời</li>
+                    <li>Bơi lội</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>BỘ SƯU TẬP</h3>
+                <ul>
+                    <li>Pharrell Williams</li>
+                    <li>Ultra Boost</li>
+                    <li>Pureboost</li>
+                    <li>Predator</li>
+                    <li>Superstar</li>
+                    <li>Stan Smith</li>
+                    <li>NMD</li>
+                    <li>Adicolor</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>THÔNG TIN VỀ CÔNG TY</h3>
+                <ul>
+                    <li>Giới Thiệu Về Chúng Tôi</li>
+                    <li>Cơ Hội Nghề Nghiệp</li>
+                    <li>Tin tức</li>
+                    <li>adidas stories</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>HỖ TRỢ</h3>
+                <ul>
+                    <li>Trợ Giúp Dịch Vụ Khách Hàng</li>
+                    <li>Công cụ tìm kiếm cửa hàng</li>
+                    <li>Biểu đồ kích cỡ</li>
+                    <li>Thanh toán</li>
+                    <li>Giao hàng</li>
+                    <li>Trả Hàng & Hoàn Tiền</li>
+                    <li>Khuyến mãi</li>
+                    <li>Đối tác</li>
+                    <li>Customer Services</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>THEO DÕI CHÚNG TÔI</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+</body>
+</html>
